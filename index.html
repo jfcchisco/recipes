@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Recipe Collection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: darkslategrey;">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Recipes</a>
+            </div>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="search" style="width: 250px;">
+            </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="recipeList">
+            <a href="http://www.google.com" target="_blank">
+            <div class="col-md-4 col-sm-6 col-xs-12 tile">
+                <img
+                    src="./img/garlic_noodles.jpg"
+                    style="width: 700px; object-fit: cover;"
+                />
+                <div class="centered"><p class="text-center tile-text">Easy Garlic Noodles</p></div>
+                
+            </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=wzKA1SVdoSY" target="_blank">
+                <div class="col-md-4 col-sm-6 col-xs-12 tile">
+                    <img
+                        src="./img/cheese_potato.jpg"
+                        style="width: 700px; object-fit: cover;"
+                    />
+                    <div class="centered"><p class="text-center tile-text">Cheese Potato Bread</p></div>
+                    
+                </div>
+                </a>
+        </div>
+
+
+        
+        
+    </div>
+
+</body>
