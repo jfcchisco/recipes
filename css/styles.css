@@ -31,9 +31,10 @@ img {
 .centered {
     position: absolute;
     width: 98%;
-    top: 150px;
+    top: 152px;
     height:40px;
-    background-color: rgb(255, 230, 10);
+    border-radius: 2px;
+    background-color: rgba(255, 230, 10, 0.85);
 }
 
 .tile-text {

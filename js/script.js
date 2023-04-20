@@ -40,6 +40,8 @@ window.onload = function () {
 }
 
 function getRecipes(value) {
+    value = value.toLowerCase();
+
     console.log(value);
 
     let recDiv = document.getElementById('recipeList');
