@@ -1,5 +1,5 @@
 // GLOBAL letIABLES
-const urlParams = new URLSearchParams(window.location.search);
+
 
 let recipes = [
     [
@@ -10,7 +10,7 @@ let recipes = [
     [
         'cheese_potato',
         'Cheese Potato Bread',
-        'cheese potato bread baked oven pan',
+        'cheese potato bread baked oven pan papa',
     ],
     [
         'pan_de_bono',
@@ -27,10 +27,19 @@ let recipes = [
 
 
 window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    var search = urlParams.get('search');
+    console.log("Search: " + search);
+
+    if(search == null) {
+        search = "";
+    }
 
     let input = document.getElementById("search");
     
-    getRecipes(input.value);
+
+    getRecipes(search);
+    input.value = search;
 
     input.addEventListener('input', function(evt) {
         getRecipes(input.value);
@@ -40,7 +49,7 @@ window.onload = function () {
 }
 
 function getRecipes(value) {
-    value = value.toLowerCase();
+    
 
     console.log(value);
 
@@ -55,6 +64,7 @@ function getRecipes(value) {
     let filterRecipes = [];
 
     if(value == "") {
+        
         filterRecipes = recipes;
     }
     else {
