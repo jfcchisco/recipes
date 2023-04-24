@@ -1,4 +1,6 @@
-
+body {
+    background-color: rgb(0, 40, 40);
+}
 
 .tile {
     background-color: rgb(255, 230, 100);

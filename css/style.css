@@ -1,25 +1,29 @@
-ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+:root {
+    --dark: rgb(0, 25, 25);
+    --light: rgb(183, 255, 233);
+    --lighta: rgba(183, 255, 233, 0.85);
+}
+
+body {
+    background-color: var(--dark);
 }
 
 .tile {
-    background-color: rgb(255, 230, 100);
+    background-color: var(--light);
     padding: 5px;
     background-clip: padding-box;
     height: 200px;
-    border:solid darkslategray;
+    border:solid var(--dark);
     border-radius: 10px;
     font-size: 15px;
 }
 
 .recipe {
-    background-color: rgb(255, 230, 100);
+    background-color: var(--light);
     padding: 5px;
-    border:solid darkslategray;
+    border:solid var(--dark);
     border-radius: 10px;
-    color: darkslategray;
+    color: var(--dark);
 }
 
 img {
@@ -31,15 +35,16 @@ img {
 .centered {
     position: absolute;
     width: 98%;
-    top: 150px;
+    top: 153px;
     height:40px;
-    background-color: rgb(255, 230, 10);
+    border-radius: 2px;
+    background-color: var(--lighta);
 }
 
 .tile-text {
     font-size: 15px;
     font-weight: bold;
-    color: darkslategray;
+    color: var(--dark);
     margin-top: 5px;
     height: 40px;
 }
