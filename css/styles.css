@@ -1,8 +1,4 @@
-ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
+
 
 .tile {
     background-color: rgb(255, 230, 100);
@@ -34,7 +30,7 @@ img {
     top: 152px;
     height:40px;
     border-radius: 2px;
-    background-color: rgba(255, 230, 10, 0.85);
+    background-color: rgba(255, 230, 100, 0.85);
 }
 
 .tile-text {
