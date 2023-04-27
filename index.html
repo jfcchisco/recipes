@@ -1,59 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <title>Recipe Collection</title>
-    <link href="img/plate.png" rel="icon">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <title>Recipe collection</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Recipes</a>
-            </div>
-            <form class="navbar-form navbar-left">
-            <div class="form-group">
-                <input id="search" type="text" class="form-control" placeholder="Search" name="search" style="width: 250px;">
-            </div>
-            </form>
-        </div>
-    </nav>
-
-    <div class="container top">
-        <div class="row" id="recipeList">
-            <a href="./pages/garlic_noodles.html">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 tile">
-                    <img
-                        src="./img/garlic_noodles.jpg"
-                        style="width: 700px; object-fit: cover;"
-                    />
-                    <div class="centered"><p class="text-center tile-text">Easy Garlic Noodles</p></div>
-                    
-                </div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=wzKA1SVdoSY" target="_blank">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12 tile">
-                    <img
-                        src="./img/cheese_potato.jpg"
-                        style="width: 700px; object-fit: cover;"
-                    />
-                    <div class="centered"><p class="text-center tile-text">Cheese Potato Bread</p></div>
-                    
-                </div>
-            </a>
-        </div>
-
-
-        
-        
+    <div class="search-wrapper">
+        <label for="search">Search recipes:</label>
+        <input type="search" id="search" data-search>
     </div>
 
-    <script type="module" src="./js/script.js"></script>
+    <div class="user-cards" data-cards-container></div>
 
+    <template data-card-template>
+        <a>
+            <div class="card" data-card>
+                <div class="title" data-title></div>
+            </div>
+        </a>
+    </template>
 </body>
+</html>
