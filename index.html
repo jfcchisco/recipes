@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     <title>Recipe collection</title>
 </head>
 <body>
     <div class="search-wrapper">
-        <label for="search">Search recipes:</label>
-        <input type="search" id="search" data-search>
+        <form class="nosubmit">
+            <input class="nosubmit" type="search" id="search" placeholder="Search recipes..." data-search>
+          </form>
     </div>
 
     <div class="user-cards" data-cards-container></div>

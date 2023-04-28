@@ -8,8 +8,7 @@ searchInput.addEventListener("input", (e) => {
     const value = e.target.value.toLowerCase();
     console.log(value);
     recipes.forEach(recipe => {
-        console.log(recipe.title.toLowerCase());    
-        const isVisible = recipe.title.toLowerCase().includes(value);
+        const isVisible = recipe.tags.toLowerCase().includes(value) || recipe.title.toLowerCase().includes(value);
         recipe.element.classList.toggle("hide", !isVisible);
     })
 })
@@ -30,6 +29,6 @@ fetch("./recipes.json")
             card.setAttribute('style', backImage);
             cardLink.href = recipe.url;
             cardContainer.append(cardLink);
-            return { title: recipe.title, url: recipe.url, element: cardLink }
+            return { title: recipe.title, url: recipe.url, tags: recipe.tags, element: cardLink }
         })
     })
