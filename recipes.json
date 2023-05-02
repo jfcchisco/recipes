@@ -21,8 +21,29 @@
   {
     "title": "Orange Chicken",
     "image": "./img/orange_chicken.jpg",
-    "url": "https://www.youtube.com/watch?v=N_87Ow7HTdQ",
-    "tags": "orange chicken asian joshua"
+    "url": "./pages/orange_chicken.html",
+    "tags": "orange chicken asian joshua pollo"
+  },
+
+  {
+    "title": "Butter Chicken",
+    "image": "./img/butter_chicken.jpg",
+    "url": "https://gimmedelicious.com/easy-20-minute-butter-chicken/",
+    "tags": "butter chicken asian indian pollo"
+  },
+
+  {
+    "title": "Homemade Bread",
+    "image": "./img/homemade_bread.jpg",
+    "url": "https://www.youtube.com/watch?v=7VpNh2Hu154",
+    "tags": "homemade bread pan pizza oven horno"
+  },
+
+  {
+    "title": "Pancito de Tita",
+    "image": "./img/pancito_de_tita.png",
+    "url": "https://www.instagram.com/p/B-s1eRYHbvj/",
+    "tags": "pan pancito tita de bread oven homemade"
   }
   
 ]

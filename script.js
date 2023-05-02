@@ -6,7 +6,7 @@ let recipes = []
 
 searchInput.addEventListener("input", (e) => {
     const value = e.target.value.toLowerCase();
-    console.log(value);
+    //console.log(value);
     recipes.forEach(recipe => {
         const isVisible = recipe.tags.toLowerCase().includes(value) || recipe.title.toLowerCase().includes(value);
         recipe.element.classList.toggle("hide", !isVisible);
