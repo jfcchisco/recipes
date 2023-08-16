@@ -51,6 +51,13 @@
     "image": "./img/banana.jpg",
     "url": "./pages/pan_de_banano.html",
     "tags": "pan pancito de banano bread oven homemade"
+  },
+
+  {
+    "title": "Homemade Pancakes",
+    "image": "./img/pancakes.jpg",
+    "url": "./pages/pancakes.html",
+    "tags": "pancake pan homemade bread arepa"
   }
   
 ]
