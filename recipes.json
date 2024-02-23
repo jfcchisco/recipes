@@ -28,7 +28,7 @@
   {
     "title": "Butter Chicken",
     "image": "./img/butter_chicken.jpg",
-    "url": "https://gimmedelicious.com/easy-20-minute-butter-chicken/",
+    "url": "./pages/butter_chicken.html",
     "tags": "butter chicken asian indian pollo"
   },
 
