@@ -58,6 +58,12 @@
     "image": "./img/pancakes.jpg",
     "url": "./pages/pancakes.html",
     "tags": "pancake pan homemade bread arepa"
+  },
+  {
+    "title": "One Dollar Fried Rice",
+    "image": "",
+    "url": "https://www.joshuaweissman.com/post/1-dollar-fried-rice-but-cheaper",
+    "tags": "fried rice arroz frito joshua"
   }
   
 ]
