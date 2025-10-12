@@ -1,7 +1,7 @@
 [
   {
     "title": "Vanilla cupcakes",
-    "image": "/img/cupcakes.jpg",
+    "image": "./img/cupcakes.jpg",
     "url": "./pages/cupcakes.html",
     "tags": "cupcake cup cake pan vanilla vainilla"
   },
